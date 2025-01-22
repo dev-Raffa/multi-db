@@ -1,0 +1,15 @@
+POST http://localhost:3000/customers
+Content-Type: application/json
+
+{
+    "name": "Empresa Teste3",
+    "email": "teste2@empresa.com"
+}
+
+POST http://localhost:3000/products/5
+Content-Type: application/json
+
+{
+  "name": "Produto Teste",
+  "price": 10.99
+}
