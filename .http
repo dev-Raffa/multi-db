@@ -2,14 +2,17 @@ POST http://localhost:3000/customers
 Content-Type: application/json
 
 {
-    "name": "Empresa Teste3",
+    "name": "Empresa Teste4",
     "email": "teste2@empresa.com"
 }
 
-POST http://localhost:3000/products/5
+POST http://localhost:3000/4/products
 Content-Type: application/json
 
 {
   "name": "Produto Teste",
   "price": 10.99
 }
+
+GET http://localhost:3000/customers/5
+Content-Type: application/json

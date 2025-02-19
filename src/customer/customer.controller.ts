@@ -24,10 +24,7 @@ export class CustomerController {
     try {
       const customer = await this.customerService.findOne(id);
       if (!customer) {
-        // Trate o caso em que o cliente não é encontrado
-        // Você pode lançar uma exceção NotFoundException do NestJS, por exemplo
-        // throw new NotFoundException('Cliente não encontrado');
-        return null; // Ou retornar null, dependendo da sua necessidade
+        throw new Error('Cliente não encontrado!');
       }
       return customer;
     } catch (error) {

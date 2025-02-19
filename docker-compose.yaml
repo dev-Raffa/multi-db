@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:15
+    restart: always # Reinicia o container automaticamente em caso de falha
+    ports:
+      - "5433:5432" # Mapeia a porta 5432 do container para a 5432 do host
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: R@f@1994
+      POSTGRES_DB: default
+    volumes:
+      - pgdata:/var/lib/postgresql/data # Persiste os dados mesmo após a remoção do container
+
+volumes:
+  pgdata: # Volume nomeado para persistência de dados
+
+  
