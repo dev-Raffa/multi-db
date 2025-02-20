@@ -13,15 +13,18 @@ import { Customer } from './customer/customer.entity';
     TypeOrmModule.forRoot({
       type: 'postgres', // Ou outro banco de dados
       host: 'localhost',
-      port: 5433,
+      port: 5432,
       username: 'postgres',
       password: 'R@f@1994',
       database: 'default', // Conexão inicial para criar os outros bancos.
-      entities:[Customer],
-      synchronize: true, // Usar migrations em produção
+      entities: [Customer],
+      synchronize: true // Usar migrations em produção
     }),
-    CustomerModule, DatabaseModule, ProductModule],
+    CustomerModule,
+    DatabaseModule,
+    ProductModule
+  ],
   controllers: [AppController],
-  providers: [AppService, DatabaseService],
+  providers: [AppService, DatabaseService]
 })
 export class AppModule {}

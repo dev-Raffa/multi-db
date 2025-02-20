@@ -8,7 +8,10 @@ import { Product } from './product.entity';
 @Module({
   imports: [DatabaseModule],
   providers: [
-    ProductService,
+    {
+      provide: "SERVICE", 
+      useClass: ProductService
+    },
     {
       provide: 'ENTITY',
       useValue: Product
