@@ -6,13 +6,13 @@ Content-Type: application/json
     "email": "teste2@empresa.com"
 }
 
-POST http://localhost:3000/4/products
+POST http://localhost:3000/1/products
 Content-Type: application/json
 
 {
-  "name": "Produto Teste",
+  "name": "Produto Teste4",
   "price": 10.99
 }
 
-GET http://localhost:3000/customers/5
+GET http://localhost:3000/1/products
 Content-Type: application/json

@@ -4,7 +4,7 @@ services:
     image: postgres:15
     restart: always # Reinicia o container automaticamente em caso de falha
     ports:
-      - "5433:5432" # Mapeia a porta 5432 do container para a 5432 do host
+      - "5432:5432" # Mapeia a porta 5432 do container para a 5432 do host
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: R@f@1994
